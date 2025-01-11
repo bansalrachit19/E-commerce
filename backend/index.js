@@ -8,7 +8,9 @@ const cors = require("cors");
 const port = process.env.PORT || 4000;
 
 app.use(express.json());
-app.use(cors());
+const cors = require("cors");
+app.use(cors({ origin: ["https://e-commerce-kohl-iota.vercel.app/", "https://e-commerce-admin-six-ruby.vercel.app/"] }));
+
 
 // Database Connection With MongoDB
 //mongoose.connect("--------- paste your mongodb link ----------/e-commerce");
